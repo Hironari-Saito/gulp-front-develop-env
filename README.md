@@ -6,7 +6,7 @@ gulpをグローバルにインストールし、プロジェクトのDev環境�
 ```
 yarn global add gulp
 yarn add gulp -D
-
+```
 sassのコンパイルを導入
 ```
 yarn add gulp-sass -D
