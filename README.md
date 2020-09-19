@@ -52,10 +52,11 @@ TODO: yarn add gulp-sftp -D
 TODO: gulp-group-css-media-queries
 TODO: gulp-mode
 TODO: npm install -D webpack webpack-stream terser-webpack-plugin
-TODO: gulp-csscomb
 TODO: gulp-imageoptim
 TODO: gulp-changed
 TODO: gulp-clean-css (css圧縮)  
 TODO: gulp-imagemin imagemin-pngquant imagemin-mozjpeg
 TODO: babel
 TODO: browserify
+
+削除されたファイルもdist側で削除できるようにする。

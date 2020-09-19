@@ -1,5 +1,3 @@
-test = function (){
-  window.addEventListener('load', function(){
-    alert('no')
-  })
+function test() {
+  console.log('test code')
 }
