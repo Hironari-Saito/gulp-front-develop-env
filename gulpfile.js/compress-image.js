@@ -20,4 +20,4 @@ const compressImage = () => {
   .pipe(dest(config.image.dest));
 };
 
-exports.image = compressImage
+exports.compressImage = compressImage

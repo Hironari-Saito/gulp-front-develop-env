@@ -41,8 +41,8 @@ exports.clean = clean
  * imamgeのタスク
  * 様々な画像形式のファイルを圧縮するタスクを行う。
  */
-const {image} = require('./compress-image.js')
-exports.image = image
+const {compressImage} = require('./compress-image.js')
+exports.image = compressImage
 
 /**
  * defaultのタスク
