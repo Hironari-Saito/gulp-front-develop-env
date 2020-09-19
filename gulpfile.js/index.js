@@ -1,6 +1,5 @@
 'use strict'
-const gulp = require('gulp')
-const { series} = require('gulp');
+const { series, parallel} = require('gulp');
 /**
  * スタイルガイド fractalのタスク
  */
@@ -9,7 +8,7 @@ exports["fractal:start"] = fractalstart
 exports["fractal:build"] = fractalbuild
 
 /**
- * Html lintに関連したタスク
+ * Htmlに関連したタスク
  */
 const {lintHtml} = require('./lint-html.js')
 exports['html-lint'] = series(lintHtml)
@@ -37,5 +36,5 @@ exports.js = series(compileJavascript, reload)
  */
 const {synchronize} = require('./browser-sync.js')
 const {monitor} = require('./monitor.js')
-const defaultTask = gulp.parallel(monitor, synchronize)
+const defaultTask = parallel(monitor, synchronize)
 exports.default = defaultTask
