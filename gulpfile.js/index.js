@@ -38,6 +38,13 @@ const {clean} = require('./clean.js')
 exports.clean = clean
 
 /**
+ * imamgeのタスク
+ * 様々な画像形式のファイルを圧縮するタスクを行う。
+ */
+const {image} = require('./compress-image.js')
+exports.image = image
+
+/**
  * defaultのタスク
  * watch browser-syncを同時に起動している。
  */

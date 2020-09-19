@@ -48,18 +48,28 @@ gulp-htmlhintの導入　HTMLの文法をチェックする。
 yarn add gulp-htmlhint -D
 ```
 
-TODO: yarn add gulp-sftp -D
-TODO: gulp-group-css-media-queries
-TODO: gulp-mode
-TODO: npm install -D webpack webpack-stream terser-webpack-plugin
-TODO: gulp-imageoptim
-TODO: gulp-changed
-TODO: gulp-clean-css (css圧縮)  
-TODO: gulp-imagemin imagemin-pngquant imagemin-mozjpeg
-TODO: babel
-TODO: browserify
-
 cleanタスクのために必要なnodeのライブラリを追加する。
 ```
 yarn add del -D
 ```
+
+
+画像を圧縮する。それぞれのプラグインと画像形式の対応は以下となる。
+gulp-imagemin: svg gif
+imagemin-pngquant: png
+imagemin-mozjpeg: jpeg
+
+```
+yarn add gulp-imagemin imagemin-pngquant imagemin-mozjpeg -D
+```
+
+TODO: yarn add gulp-sftp -D
+
+TODO: npm install -D webpack webpack-stream terser-webpack-plugin
+TODO: gulp-imageoptim
+TODO: gulp-changed
+TODO: gulp-clean-css (css圧縮)  
+TODO: gulp-imagemin 
+TODO: babel
+TODO: browserify
+

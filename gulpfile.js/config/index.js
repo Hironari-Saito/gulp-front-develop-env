@@ -18,6 +18,10 @@ const config = {
     dest:'./dist/css',
   },
   cleanPath: 'dist/**',
+  image: {
+    src:'./src/img/*.{jpg,jpeg,png,gif,svg}',
+    dest: './dist/img',
+  }
 }
 
 exports.config = config
