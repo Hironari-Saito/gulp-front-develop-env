@@ -59,4 +59,7 @@ TODO: gulp-imagemin imagemin-pngquant imagemin-mozjpeg
 TODO: babel
 TODO: browserify
 
-削除されたファイルもdist側で削除できるようにする。
+cleanタスクのために必要なnodeのライブラリを追加する。
+```
+yarn add del -D
+```

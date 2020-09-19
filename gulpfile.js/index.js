@@ -31,6 +31,13 @@ const {compileJavascript} = require('./compile-javascript.js')
 exports.js = series(compileJavascript, reload)
 
 /**
+ * cleanのタスク
+ * distフォルダ配下のファイルを全て削除する。
+ */
+const {clean} = require('./clean.js')
+exports.clean = clean
+
+/**
  * defaultのタスク
  * watch browser-syncを同時に起動している。
  */

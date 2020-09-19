@@ -11,12 +11,13 @@ const config = {
   },
   js: {
     src: ['./src/js/**/*.js','!./src/js/min/**/*.js'],
-    dest: './dist/js/'
+    dest: './dist/js/',
   },
   sass: {
     src: './src/sass/**/*.scss',
-    dest:'./dist/css'
-  }
+    dest:'./dist/css',
+  },
+  cleanPath: 'dist/**',
 }
 
 exports.config = config
