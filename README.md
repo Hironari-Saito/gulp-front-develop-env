@@ -63,13 +63,17 @@ imagemin-mozjpeg: jpeg
 yarn add gulp-imagemin imagemin-pngquant imagemin-mozjpeg -D
 ```
 
+CSSを圧縮する。
+```
+yarn add gulp-clean-css -D
+```
+
+
+
 TODO: yarn add gulp-sftp -D
 
 TODO: npm install -D webpack webpack-stream terser-webpack-plugin
-TODO: gulp-imageoptim
-TODO: gulp-changed
-TODO: gulp-clean-css (css圧縮)  
-TODO: gulp-imagemin 
+
 TODO: babel
 TODO: browserify
 

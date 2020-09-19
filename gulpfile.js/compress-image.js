@@ -7,7 +7,7 @@ const pngquant = require('imagemin-pngquant')
 const {config} = require('./config')
 
 
-const compressImage = () => {
+const compressImage = done => {
   src(config.image.src)
   .pipe(imagemin(
     [
@@ -18,6 +18,7 @@ const compressImage = () => {
     ]
   ))
   .pipe(dest(config.image.dest));
+  done();
 };
 
 exports.compressImage = compressImage
