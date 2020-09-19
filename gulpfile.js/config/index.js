@@ -11,7 +11,7 @@ const config = {
   },
   js: {
     src: ['./src/js/**/*.js','!./src/js/min/**/*.js'],
-    dest: './dist/js/min'
+    dest: './dist/js/'
   },
   sass: {
     src: './src/sass/**/*.scss',

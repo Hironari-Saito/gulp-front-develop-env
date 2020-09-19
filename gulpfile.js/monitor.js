@@ -8,9 +8,9 @@ const {compileSass} = require('./compile-sass.js')
 const {compileJavascript}= require('./compile-javascript.js')
 
 const monitor = done => {
-  watch(config.js.src, compileJavascript).on('change', browser.reload)
-  watch(config.sass.src,compileSass).on('change', browser.reload);
-  watch(config.html.src,lintHtml).on('change', browser.reload);
+  watch(config.js.src,{ ignoreInitial: false }, compileJavascript).on('change', browser.reload)
+  watch(config.sass.src,{ ignoreInitial: false }, compileSass).on('change', browser.reload);
+  watch(config.html.src,{ ignoreInitial: false }, lintHtml).on('change', browser.reload);
   
   done()
 }
