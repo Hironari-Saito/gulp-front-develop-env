@@ -22,6 +22,7 @@ const compileSass = (done) => {
       sassLint({
         rules: {
           indentation: 0, // prettierは長文を折り返す際に+2のspaceを自動的に挿入するが、そのルールとsass-lintのルールと合わないため、インデントのルールは無視するように設定
+          'leading-zero': 'never', // prettierはstylelintのleading-zeroに対応しないとのこと詳細はURLを参照することhttps://github.com/prettier/prettier/issues/2705
         },
       })
     )
