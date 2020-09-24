@@ -2,57 +2,66 @@
 
 導入したモジュールは以下
 
-gulpをグローバルにインストールし、プロジェクトのDev環境に追加
+gulp をグローバルにインストールし、プロジェクトの Dev 環境に追加
+
 ```
 yarn global add gulp
 yarn add gulp -D
 ```
-sassのコンパイルを導入
+
+sass のコンパイルを導入
+
 ```
 yarn add gulp-sass -D
 ```
 
 オートプリフィクサーの導入（ベンダープレフィックスを自動的に追加してくれる）
+
 ```
 yarn add gulp-autoprefixer -D
 ```
 
 スタイルガイドジェネレーターの導入
+
 ```
 yarn add @frctl/fractal -D
 ```
 
-JavaScriptの圧縮
+JavaScript の圧縮
+
 ```
 yarn add gulp-uglify -D
 ```
 
-Browser-syncの導入　画面を更新+スクロール, inputの入力も同期
+Browser-sync の導入　画面を更新+スクロール, input の入力も同期
+
 ```
 yarn add browser-sync -D
 ```
 
+gulp-plumber の導入　エラー時のハンドリングを行う。
 
-gulp-plumberの導入　エラー時のハンドリングを行う。
 ```
 yarn add gulp-plumber -D
 ```
 
-gulp-notifyの導入　エラー時にブラウザで表示する。
+gulp-notify の導入　エラー時にブラウザで表示する。
+
 ```
 yarn add gulp-notify -D
 ```
 
-gulp-htmlhintの導入　HTMLの文法をチェックする。
+gulp-htmlhint の導入　 HTML の文法をチェックする。
+
 ```
 yarn add gulp-htmlhint -D
 ```
 
-cleanタスクのために必要なnodeのライブラリを追加する。
+clean タスクのために必要な node のライブラリを追加する。
+
 ```
 yarn add del -D
 ```
-
 
 画像を圧縮する。それぞれのプラグインと画像形式の対応は以下となる。
 gulp-imagemin: svg gif
@@ -63,24 +72,32 @@ imagemin-mozjpeg: jpeg
 yarn add gulp-imagemin imagemin-pngquant imagemin-mozjpeg -D
 ```
 
-CSSを圧縮する。
+CSS を圧縮する。
+
 ```
 yarn add gulp-clean-css -D
 ```
 
-reset cssをimportできるようにする。
+reset css を import できるようにする。
+
 ```
 yarn add node-sass-package-importer -D
 ```
 
-# ここでは、例としてhtml5-resetを使えるようにする
-使い方はシンプルで、importすれば良い
+# ここでは、例として html5-reset を使えるようにする
+
+使い方はシンプルで、import すれば良い
+TODO: いちいちリセット css を import するのはめんどくさいので、予め import しておくように修正する。
+
 ```
 yarn add html5-reset -D
 ```
 
-TODO: いちいちリセットcssをimportするのはめんどくさいので、予めimportしておくように修正する。
+sass lint ツールを導入
 
+```
+yarn add gulp-sass-lint -D
+```
 
 TODO: yarn add gulp-sftp -D
 
@@ -90,4 +107,4 @@ TODO: babel
 TODO: browserify
 TODO: glob, postcss
 
-TODO: buildコマンドの実装：devとprodで出力されるファイルをコンパイル後そのままの形式と圧縮形式に分けたい。（出力されたファイルをデバッグしやすいようにすることで利便性が向上するため）
+TODO: build コマンドの実装：dev と prod で出力されるファイルをコンパイル後そのままの形式と圧縮形式に分けたい。（出力されたファイルをデバッグしやすいようにすることで利便性が向上するため）
