@@ -79,7 +79,7 @@ yarn add node-sass-package-importer -D
 yarn add html5-reset -D
 ```
 
-
+TODO: いちいちリセットcssをimportするのはめんどくさいので、予めimportしておくように修正する。
 
 
 TODO: yarn add gulp-sftp -D
@@ -90,3 +90,4 @@ TODO: babel
 TODO: browserify
 TODO: glob, postcss
 
+TODO: buildコマンドの実装：devとprodで出力されるファイルをコンパイル後そのままの形式と圧縮形式に分けたい。（出力されたファイルをデバッグしやすいようにすることで利便性が向上するため）
