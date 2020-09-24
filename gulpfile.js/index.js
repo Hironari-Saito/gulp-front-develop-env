@@ -50,5 +50,5 @@ exports.image = compressImage
  */
 const {synchronize} = require('./browser-sync.js')
 const {monitor} = require('./monitor.js')
-const defaultTask = parallel(monitor, synchronize)
+const defaultTask = series(clean,compileSass, compileJavascript,compressImage,lintHtml,  parallel(monitor, synchronize))
 exports.default = defaultTask
