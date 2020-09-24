@@ -17,12 +17,14 @@ const { config } = require('./config');
  */
 const compileSass = (done) => {
   src(config.sass.src, { sourcemaps: true })
+    .pipe(plumber(notify.onError(config.notifyMessage)))
     .pipe(
-      plumber(
-        notify.onError(config.notifyMessage)
-      )
+      sassLint({
+        rules: {
+          indentation: 0, // prettierは長文を折り返す際に+2のspaceを自動的に挿入するが、そのルールとsass-lintのルールと合わないため、インデントのルールは無視するように設定
+        },
+      })
     )
-    .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
     .pipe(
