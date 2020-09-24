@@ -68,6 +68,18 @@ CSSを圧縮する。
 yarn add gulp-clean-css -D
 ```
 
+reset cssをimportできるようにする。
+```
+yarn add node-sass-package-importer -D
+```
+
+# ここでは、例としてhtml5-resetを使えるようにする
+使い方はシンプルで、importすれば良い
+```
+yarn add html5-reset -D
+```
+
+
 
 
 TODO: yarn add gulp-sftp -D
