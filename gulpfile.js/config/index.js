@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const config = {
   baseDir: './dist',
@@ -7,21 +7,24 @@ const config = {
   notifyMessage: 'Error: <%= error.message %>',
   html: {
     src: './src/html/**/*.html',
-    dest: './dist/html'
+    dest: './dist/html',
   },
   js: {
-    src: ['./src/js/**/*.js','!./src/js/min/**/*.js'],
+    src: [
+      './src/js/**/*.js',
+      '!./src/js/min/**/*.js',
+    ],
     dest: './dist/js/',
   },
   sass: {
     src: './src/sass/**/*.scss',
-    dest:'./dist/css',
+    dest: './dist/css',
   },
   cleanPath: 'dist/**',
   image: {
-    src:'./src/img/*.{jpg,jpeg,png,gif,svg}',
+    src: './src/img/**/*.{jpg,jpeg,png,gif,svg}',
     dest: './dist/img',
-  }
-}
+  },
+};
 
-exports.config = config
+exports.config = config;
